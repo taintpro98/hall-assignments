@@ -1,12 +1,16 @@
 #!/bin/sh
-echo “Chuong trinh so sanh 2 so nhap vao gom $1 va $2”
-if [ $1 == $2 ]
+echo "Chuong trinh so sanh 2 so"
+echo "Nhap so thu nhat"
+read a
+echo "Nhap so thu hai"
+read b
+if [ $a == $b ]
 then 
     echo "hai so bang nhau"
-elif [ $1 -lt $2 ] 
+elif [ $a -lt $b ] 
 then 
-    echo "so ben trai nho hon so ben phai"
+    echo "so thu nhat nho hon so thu hai"
 else
-    echo "so ben trai lon hon so ben phai"
+    echo "so thu nhat lon hon so thu hai"
 fi
 exit 0
